@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"content="width=device-width,initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="mb-12 space-y-2 text-center">
+        <h1 class="text-2xl text-cyan-900 font-bold md:text-4xl">Taller Calculadora</h1>
+      </div>
+<!-- component -->
+
+<div class="mt-6  bg-gray-50 ">
+  <div class=" px-20 py-10 mx-auto">
+        
+        <!--author-->
+     <div class="max-w-6xl px-10 py-6 mx-auto bg-gray-50">
+        
+    <!-- Carousel-->
+<div class="max-w-2xl mx-auto">
+
+	<div id="default-carousel" class="relative" data-carousel="static">
+        <!-- Carousel wrapper -->
+        <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96">
+            <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <span class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">First Slide</span>
+                <img src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/480/public/media/image/2019/03/lenguajes_programacion_odiados_amados_2019.jpg?itok=N85E5HTT" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="https://concepto.de/wp-content/uploads/2018/08/f%C3%ADsica-e1534938838719.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="https://r1.abcimg.es/resizer/resizer.php?nuevoancho=620&imagen=https%3A%2F%2Fwww.abc.es%2Fabc%2Fwww%2Fmultimedia%2Fciencia%2F2022%2F07%2F11%2Fdeepmind-ia-bebe-Rbz2PloIg3bxgxUA6T1VVMM-758x470%40abc.jpg&medio=abc" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+            </div>
+        </div>
+        <!-- Slider indicators -->
+        <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+        </div>
+        <!-- Slider controls -->
+        <button type="button" class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+            <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                <span class="hidden">Previous</span>
+            </span>
+        </button>
+        <button type="button" class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next>
+            <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <span class="hidden">Next</span>
+            </span>
+        </button>
+    </div>
+    <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+</div>
+
+        <div class="mt-2">
+          <!--post heading-->
+          <a href="#"
+                class="sm:text-3xl md:text-3xl lg:text-3xl xl:text-4xl font-bold text-purple-500  hover:underline">Movimiento rectilineo uniforme</a>
+                <!--author avator-->
+               <div class="font-light text-gray-600">
+                
+              <a href="#" class="flex items-center mt-6 mb-6"><img
+                          src="img/perfil.jpg"
+                          alt="avatar" class="hidden object-cover w-14 h-14 mx-4 rounded-full sm:block">
+                      <h1 class="font-bold text-gray-700 hover:underline">Por: Kenneth Toapanta</h1>
+                  </a>
+            </div>
+       </div>
+    
+       <!--end post header-->
+          <!--post content-->
+ <div class="max-w-4xl px-10  mx-auto text-2xl text-gray-700 mt-4 rounded bg-gray-100">
+
+   <!--content body-->
+   <div>
+          <p class="mt-2 p-8">En la práctica científica se tiende a considerar
+            situaciones simplificadas de los fenómenos, para, una
+            vez comprendidas, introducir variables que las
+            aproximen más a la realidad. En esta línea, el
+            movimiento de un objeto está condicionado por su
+            interacción (rozamiento, acción de un motor,
+            gravedad, fuerzas eléctricas ) con el resto de objetos
+            del Universo, los cuales, con más o menos intensidad
+            le comunican una aceleración que perturba su camino.
+            Pero, ¿cómo sería el movimiento de un objeto
+            completamente aislado, o simplemente se anularan
+            todas las interacciones que actúan sobre él? Las fórmulas del movimiento rectilíneo uniforme contempla tres incógnitas: Velocidad 
+            constante (V), Distancia (d) y Tiempo (t). La fórmula principal teniendo de incógnita 
+            la velocidad constante es la siguiente:</p>
+        </div>
+<img src="img/mru.jpg" alt="">
+<p>
+    Para resolver las fórmulas del movimiento rectilíneo uniforme se debe convertir las unidades al Sistema
+    Internacional (S.I.) siendo las siguientes para cada factor:
+
+    Velocidad, rapidez, celeridad o módulo: metros por segundo (m/s)
+    Distancia: metros (m)
+    Tiempo: segundos (s).
+</p>
+     <!--Calculadora y tabla-->
+<div class="container">
+    <h1>Ingrese La distancia</h1><input type="number" id="distancia" value="">
+    <h1>Ingrese el Tiempo</h1> <input type="number" id="tiempo" value="">
+    <br>
+    <button id="Velocidad"><img src="data:image/png;base64,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" alt="Calcular" style="width: 100px; height: 100px;" ></button>
+    <table class="table-fixed " style="table-layout: auto;" id="Calc">
+        <thead>
+          <tr>
+            <th>Number</th>
+            <th>Distancia</th>
+            <th>Tiempo</th>
+            <th>Velocidad</th>
+          </tr>
+        </thead>
+        <tbody id="auxiliar">
+          <tr>
+
+          </tr>
+        </tbody>
+      </table>
+      <button id="limpiar"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWIjeTtSXzyOJrWc6cbEhLfwTu2Rg5CYRUGQ&usqp=CAU" alt="limpiar" style="width: 100px; height: 100px;" ></button>
+    <script>
+        let cont=0;
+        $(document).ready(function () {
+            $("#Velocidad").click(function (e) { 
+            
+                e.preventDefault();
+                cont=cont+1;
+                let d = parseInt($("#distancia").val());
+                let t =parseInt($("#tiempo").val());
+                let r = 0;
+                r = d / t; 
+                $("#Calc").append("<tr><td>"+cont+"</td><td>"+d+"</td><td>"+t+"</td><td>"+r+"</td></tr>")
+                $("#distancia").val("");
+                $("#tiempo").val("");
+            });
+            $("#limpiar").click(function (e) { 
+                e.preventDefault();
+                $("#auxiliar").text("");
+            });
+        });
+    </script>
+</div>
+</div>
+</body>
+</html>
